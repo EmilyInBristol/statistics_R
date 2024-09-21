@@ -1,11 +1,11 @@
 is_prime <- function(num) {
-  stopifnot(is.numeric(num), num%%1==0, num>=0)
+  stopifnot(is.numeric(num), num %% 1 == 0, num >= 0)
   t_val <- TRUE
-  if(num<2){
+  if (num < 2){
     t_val <- FALSE
-  } else if(num>2) {
-    for(i in 2:sqrt(num)) {
-      if(num%%i==0){
+  } else if (num > 2) {
+    for (i in 2:sqrt(num)) {
+      if (num %% i == 0) {
         t_val <- FALSE
         break
       }
@@ -40,4 +40,3 @@ f1(2)
 a <- 2
 f1 <- subtraction_function(a)
 f1(2)
-
