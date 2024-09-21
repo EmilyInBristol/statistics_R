@@ -1,2 +1,2 @@
 a <- c("hello", "bristol")
-a
+print(a)
